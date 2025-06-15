@@ -1,0 +1,332 @@
+<!doctype html>
+  <head> 
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/100/tattoo-machine.png">
+	<script src="./javaskript/js.js"></script>
+	<title>VipTattoo</title>
+	</head>
+	<body>
+<nav class="navbar navbar-expand-lg fixed-top bg-black" >
+<div class="container d-flex justify-content-center">
+<a href="project.html">
+	<img src="img/icon.png" alt="icon" class="img-fluid"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="project.html">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="galeri.html">Галерея</a>
+        </li>
+		<li class="nav-item text-light">
+          <a class="nav-link active text-light" href="news.html" aria-disabled="true">Новини</a>
+        </li>
+        <li class="nav-item text-light">
+          <a class="nav-link active text-light" href="prise.html" aria-disabled="true">Ціни</a>
+        </li>
+		<li class="nav-item text-light">
+          <a class="nav-link active text-light" href="reviews.html" aria-disabled="true">Відгуки</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 active" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<main>
+        <section id="hero-portfolio" class="hero-section text-center text-light">
+            <div class="container">
+                <h2 class="display-4 fw-bold mb-3">Наше Портфолио</h2>
+                <p class="lead mb-4">Погрузитесь в мир искусства татуировки. Откройте для себя разнообразие стилей и мастерство наших художников.</p>
+                <a href="/contact.html" class="button primary-button">Записаться на сеанс</a>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="py-5 bg-dark text-light">
+            <div class="container">
+                <h3 class="text-center mb-5 text-primary">Исследуйте наши работы по стилям</h3>
+
+                <ul class="nav nav-tabs justify-content-center mb-4" id="galleryTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">Все работы</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="realism-tab" data-bs-toggle="tab" data-bs-target="#realism" type="button" role="tab" aria-controls="realism" aria-selected="false">Реализм</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="traditional-tab" data-bs-toggle="tab" data-bs-target="#traditional" type="button" role="tab" aria-controls="traditional" aria-selected="false">Традиционный</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="minimalism-tab" data-bs-toggle="tab" data-bs-target="#minimalism" type="button" role="tab" aria-controls="minimalism" aria-selected="false">Минимализм</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="watercolor-tab" data-bs-toggle="tab" data-bs-target="#watercolor" type="button" role="tab" aria-controls="watercolor" aria-selected="false">Акварель</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="geometric-tab" data-bs-toggle="tab" data-bs-target="#geometric" type="button" role="tab" aria-controls="geometric" aria-selected="false">Геометрия</button>
+                    </li>
+                    </ul>
+
+                <div class="tab-content" id="galleryTabsContent">
+
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/FF0000/FFFFFF?text=Реализм+1" data-img-title="Портрет Льва" data-img-description="Детализированный портрет льва на предплечье, выполненный в стиле реализм." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/FF0000/FFFFFF?text=Реализм+1" class="card-img-top" alt="Портрет Льва в реализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Портрет Льва</h5>
+                                        <p class="card-text">Стиль: Реализм <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/0000FF/FFFFFF?text=Реализм+2" data-img-title="Глаз Дракона" data-img-description="Мистический глаз дракона, выполненный с высокой степенью детализации." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/0000FF/FFFFFF?text=Реализм+2" class="card-img-top" alt="Глаз Дракона в реализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Глаз Дракона</h5>
+                                        <p class="card-text">Стиль: Реализм <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/FFFF00/000000?text=Традиция+1" data-img-title="Олдскульный Якорь" data-img-description="Классический якорь в традиционном стиле с яркими цветами." data-img-master="Мастер В">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/FFFF00/000000?text=Традиция+1" class="card-img-top" alt="Якорь в традиционном стиле">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Олдскульный Якорь</h5>
+                                        <p class="card-text">Стиль: Традиционный <br> Мастер: Мастер В</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/00FF00/000000?text=Традиция+2" data-img-title="Бабочка и Роза" data-img-description="Яркая бабочка с классической розой в традиционном исполнении." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/00FF00/000000?text=Традиция+2" class="card-img-top" alt="Бабочка и Роза в традиционном стиле">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Бабочка и Роза</h5>
+                                        <p class="card-text">Стиль: Традиционный <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/808080/FFFFFF?text=Минимализм+1" data-img-title="Контур Горы" data-img-description="Простая и элегантная контурная татуировка горы." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/808080/FFFFFF?text=Минимализм+1" class="card-img-top" alt="Контур Горы в минимализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Контур Горы</h5>
+                                        <p class="card-text">Стиль: Минимализм <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/A9A9A9/FFFFFF?text=Минимализм+2" data-img-title="Линия Сердца" data-img-description="Нежная линия, формирующая сердце на запястье." data-img-master="Мастер В">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/A9A9A9/FFFFFF?text=Минимализм+2" class="card-img-top" alt="Линия Сердца в минимализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Линия Сердца</h5>
+                                        <p class="card-text">Стиль: Минимализм <br> Мастер: Мастер В</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/87CEEB/FFFFFF?text=Акварель+1" data-img-title="Птица Акварелью" data-img-description="Яркая птица, выполненная в акварельной технике с размытыми цветами." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/87CEEB/FFFFFF?text=Акварель+1" class="card-img-top" alt="Птица Акварелью">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Птица Акварелью</h5>
+                                        <p class="card-text">Стиль: Акварель <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/36454F/FFFFFF?text=Геометрия+1" data-img-title="Геометрический Лис" data-img-description="Стилизованный лис, выполненный из геометрических фигур и линий." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/36454F/FFFFFF?text=Геометрия+1" class="card-img-top" alt="Геометрический Лис">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Геометрический Лис</h5>
+                                        <p class="card-text">Стиль: Геометрия <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="realism" role="tabpanel" aria-labelledby="realism-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/FF0000/FFFFFF?text=Реализм+1" data-img-title="Портрет Льва" data-img-description="Детализированный портрет льва на предплечье, выполненный в стиле реализм." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/FF0000/FFFFFF?text=Реализм+1" class="card-img-top" alt="Портрет Льва в реализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Портрет Льва</h5>
+                                        <p class="card-text">Стиль: Реализм <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/0000FF/FFFFFF?text=Реализм+2" data-img-title="Глаз Дракона" data-img-description="Мистический глаз дракона, выполненный с высокой степенью детализации." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/0000FF/FFFFFF?text=Реализм+2" class="card-img-top" alt="Глаз Дракона в реализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Глаз Дракона</h5>
+                                        <p class="card-text">Стиль: Реализм <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="traditional" role="tabpanel" aria-labelledby="traditional-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/FFFF00/000000?text=Традиция+1" data-img-title="Олдскульный Якорь" data-img-description="Классический якорь в традиционном стиле с яркими цветами." data-img-master="Мастер В">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/FFFF00/000000?text=Традиция+1" class="card-img-top" alt="Якорь в традиционном стиле">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Олдскульный Якорь</h5>
+                                        <p class="card-text">Стиль: Традиционный <br> Мастер: Мастер В</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/00FF00/000000?text=Традиция+2" data-img-title="Бабочка и Роза" data-img-description="Яркая бабочка с классической розой в традиционном исполнении." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/00FF00/000000?text=Традиция+2" class="card-img-top" alt="Бабочка и Роза в традиционном стиле">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Бабочка и Роза</h5>
+                                        <p class="card-text">Стиль: Традиционный <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="minimalism" role="tabpanel" aria-labelledby="minimalism-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/808080/FFFFFF?text=Минимализм+1" data-img-title="Контур Горы" data-img-description="Простая и элегантная контурная татуировка горы." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/808080/FFFFFF?text=Минимализм+1" class="card-img-top" alt="Контур Горы в минимализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Контур Горы</h5>
+                                        <p class="card-text">Стиль: Минимализм <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/A9A9A9/FFFFFF?text=Минимализм+2" data-img-title="Линия Сердца" data-img-description="Нежная линия, формирующая сердце на запястье." data-img-master="Мастер В">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/A9A9A9/FFFFFF?text=Минимализм+2" class="card-img-top" alt="Линия Сердца в минимализме">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Линия Сердца</h5>
+                                        <p class="card-text">Стиль: Минимализм <br> Мастер: Мастер В</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="watercolor" role="tabpanel" aria-labelledby="watercolor-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/87CEEB/FFFFFF?text=Акварель+1" data-img-title="Птица Акварелью" data-img-description="Яркая птица, выполненная в акварельной технике с размытыми цветами." data-img-master="Мастер А">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/87CEEB/FFFFFF?text=Акварель+1" class="card-img-top" alt="Птица Акварелью">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Птица Акварелью</h5>
+                                        <p class="card-text">Стиль: Акварель <br> Мастер: Мастер А</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="geometric" role="tabpanel" aria-labelledby="geometric-tab">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/600x600/36454F/FFFFFF?text=Геометрия+1" data-img-title="Геометрический Лис" data-img-description="Стилизованный лис, выполненный из геометрических фигур и линий." data-img-master="Мастер Б">
+                                <div class="card h-100 gallery-item">
+                                    <img src="https://via.placeholder.com/400x400/36454F/FFFFFF?text=Геометрия+1" class="card-img-top" alt="Геометрический Лис">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Геометрический Лис</h5>
+                                        <p class="card-text">Стиль: Геометрия <br> Мастер: Мастер Б</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                </div> </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-primary" id="imageModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" class="img-fluid rounded" id="modalImage" alt="Галерея изображений" style="max-height: 80vh; object-fit: contain;">
+                    <p id="modalDescription" class="mt-3 text-muted"></p>
+                    <p id="modalMaster" class="small text-muted"></p>
+                </div>
+                <div class="modal-footer border-top-0 justify-content-between">
+                    <button type="button" class="btn primary-button" id="prevImageBtn">← Предыдущая</button>
+                    <button type="button" class="btn primary-button" id="nextImageBtn">Следующая →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="inform bg-dark">
+<div class="text-center"><img src="img/icon.png" alt="icon" class="img-fluid"></div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Навігація</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="project.html">Головна</a></li>
+    <li><a class="dropdown-item" href="">Ескізи</a></li>
+    <li><a class="dropdown-item" href="reviews.html">Відгуки</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Навігація</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="">Головна</a></li>
+    <li><a class="dropdown-item" href="">Ескізи</a></li>
+    <li><a class="dropdown-item" href="">Відгуки</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Навігація
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="">Головна</a></li>
+    <li><a class="dropdown-item" href="">Ескізи</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Події</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="">Новини</a></li>
+    <li><a class="dropdown-item" href="">Рейтинг тату салонів</a></li>
+    <li><a class="dropdown-item" href=""></a></li>
+  </ul>
+</div>
+<div class="sots">
+<a href="https://t.me/hhartemm" target="_blank"><img src="https://img.icons8.com/ios/50/telegram.png" alt="telegram" style="filter: brightness(0) invert(1);"></a>
+<a href="https://www.instagram.com/hhartev2/" class="mt-2" target="_blank"><img src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="Instagram" width="25" height="25" style="filter: brightness(0) invert(1);"></a>
+</div>
+</div>
+  <div class="foot text-center bg-dark">
+  <div>
+  <div>Сайт розроблений Art Murzak Group</div>
+  </div>
+  <div class="list"><div>Зв'яжіться з нами <br><a href="mailto:artemmurzak8@gmail.com">artemmurzak8@gmail.com</a></div>
+  <div>Скарги та пропозиції <br><a href="mailto:artemmurzhak@gmail.com">artemmurzhak@gmail.com</a></div>
+  <div>Запис та консультація по Україні безкоштовно: <br><a href="tel:+380992421738">+380992421738</a></div>
+  </div>
+  </div>
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
